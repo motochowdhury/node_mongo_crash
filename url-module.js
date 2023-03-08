@@ -7,7 +7,7 @@ const url = require("url");
 
 const server = http.createServer((req, res) => {
   const addUrl = "http://localhost:5000/contact?name=moto";
-  const parsedUrl = url.parse(addUrl, true);
+  const parsedUrl = url.parse(addUrl, true).query;
   console.log(parsedUrl);
 });
 console.log(url);
