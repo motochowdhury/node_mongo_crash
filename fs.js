@@ -6,12 +6,12 @@ const fs = require("fs");
 
 const server = http.createServer((req, res) => {
   if ((req.url = "/")) {
-    fs.readFile("data.txt", (err, data) => {
+    fs.writeFile("AddedData.txt", "this is moto", (err) => {
       if (err) {
         res.write("Something is wrong happened");
         res.end();
       } else {
-        res.write(data);
+        res.write("data successfully added");
         res.end();
       }
     });
