@@ -6,7 +6,7 @@ const fs = require("fs");
 
 const server = http.createServer((req, res) => {
   if ((req.url = "/")) {
-    fs.writeFile("AddedData.txt", "This note is updated for 10 mar", (err) => {
+    fs.writeFile("AddedData.txt", "This note is updated for 11 mar", (err) => {
       if (err) {
         res.write("Something is wrong happened");
         res.end();
