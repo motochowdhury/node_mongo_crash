@@ -8,4 +8,7 @@ const eventHandler = () => {
 };
 
 // Event assign
-eventEmmiter.on("exicete", eventHandler).eventHandler;
+eventEmmiter.on("excited", eventHandler).eventHandler;
+
+// firing the event
+eventEmmiter.emit("excited");
