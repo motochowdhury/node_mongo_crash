@@ -6,3 +6,6 @@ const eventEmmiter = new events.EventEmitter();
 const eventHandler = () => {
   console.log("This is my first event handling");
 };
+
+// Event assign
+eventEmmiter.on("exicete", eventHandler).eventHandler;
